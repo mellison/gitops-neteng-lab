@@ -47,7 +47,7 @@ jobs:
       - name: Extract package artifact
         run: tar -xzvf artifacts/configs.tar.gz -C .
       - name: Install jq
-        run: sudo apt-get update && suto apt-get install -y jq
+        run: sudo apt-get update && sudo apt-get install -y jq
       - name: Authenticate to CML
         id: cml_auth
         uses: fjogeleit/http-request-action@v1.16.5
